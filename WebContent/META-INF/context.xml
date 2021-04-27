@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+
+	<Environment type="java.lang.String"
+		name="dao/DAOFactoryImplementationClass"  
+		value="fr.eni.encheres.dal.jdbc.DAOFactoryJdbcImpl" 
+	/>
+
+	<Resource type="javax.sql.DataSource"
+		name="jdbc/poolConnexion"
+		
+		driverClassName="com.microsoft.sqlserver.jdbc.SQLServerDriver"
+		url="jdbc:sqlserver://localhost;database=ENCHERES"
+		
+		username="sa"
+		password="Pa$$w0rd"
+		
+		maxTotal="100"
+		maxIdle="30"
+		maxWaitMillis="10000"
+	/>
+</Context>

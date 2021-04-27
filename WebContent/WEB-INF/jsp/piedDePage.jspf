@@ -1,0 +1,22 @@
+    <!-- Footer -->
+    <footer class="py-3 bg-dark">
+      <div class="container">
+      	<div class="row">
+      		<div class="col-6"><p class="m-0 text-Left text-white"><fmt:message key="label.footer.copyright"/></p></div>
+      		<div class="col-6">
+      			<c:if test="${sessionScope.user.noUtilisateur==null}">
+      				<p class="m-0 text-right text-white"><fmt:message key="label.footer.unsigned"/></p>
+      			</c:if>
+      			<c:if test="${sessionScope.user.noUtilisateur!=null}">
+      				<p class="m-0 text-right text-white"><fmt:message key="label.footer.signed"/>${sessionScope.user.username}</p>
+      			</c:if>
+      		</div>
+      	</div>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    

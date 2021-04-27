@@ -1,0 +1,12 @@
+-- Script de nettoyage de la base de données ENCHERES
+--   type :      SQL Server 2012
+--
+-- 2020/11/02 ACH
+
+DROP PROCEDURE sp_supprimerUtilisateur;
+
+DROP TABLE ENCHERES;
+DROP TABLE RETRAITS;
+DROP TABLE ARTICLES_VENDUS;
+DROP TABLE UTILISATEURS;
+DROP TABLE CATEGORIES;
